@@ -1,0 +1,52 @@
+// Branded hghlight selection color
+::selection {
+  text-shadow: none;
+  color: @brand-dk;
+  background: @brand-bg;
+}
+
+// Framework
+body {
+	background-color: @grey-bg !important;
+	#content {
+		margin-top: 170px; // Allow for height of fixed header
+	}
+	// Two column grid
+	&.right-sidebar {
+		.content-area {
+			width: 70%;
+			float: left;
+			margin-right: 4%;
+		}
+		#secondary.widget-area {
+			width: 26%;
+		}
+	}
+
+	// Override some Storefront theme styles
+	.hentry {
+		border-bottom: none;
+		.entry-header {
+			border-bottom: 4px solid @grey-bg-dk;
+			margin-bottom: 10px;
+			.entry-title {
+				border-bottom: none;
+				margin-top: 18px;
+				padding-bottom: 14px;
+			}
+		}
+	}
+	.widget-area .widget {
+		h1.widget-title {
+			line-height: 28px;
+			border-bottom: 4px solid @grey-bg-dk;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+		}
+		&#text-2 {
+			h1.widget-title {
+				margin-top: 0;
+			}
+		}
+	}
+}

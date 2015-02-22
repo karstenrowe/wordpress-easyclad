@@ -1,0 +1,34 @@
+// Hero slideshow used on the home page
+#carousel-hero {
+	background-color: @grey-bg;
+	border-bottom: 2px solid @grey;
+	margin-bottom: 40px;
+  -webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s;
+	animation: fadein 3s;
+	.carousel-inner {
+	}
+	.item {
+		max-height: 520px;
+	}
+	img.slide-img {
+		width: 100%;
+	}
+	.carousel-control {
+		text-shadow: none;
+		color: @brand;
+		background: none;
+		top: 51%;
+		&:focus {
+			opacity: 0.4;
+		}
+		&:hover {
+			opacity: 1;
+		}
+		.fa {
+			font-size: 58px;
+		}
+	}
+}

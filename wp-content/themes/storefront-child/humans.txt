@@ -1,0 +1,8 @@
+/* some of the humans devs behind easyclad.co.uk */
+/* see humanstxt.org */
+
+/* TEAM */
+	Design & development lead: Karsten Rowe
+	Website: karstenrowe.com
+	Twitter: @karstenrowe
+	Location: Harrogate, U.K.

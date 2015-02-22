@@ -1,0 +1,58 @@
+// Typography
+body {
+	font-family: @body-font;
+	font-size: @normal;
+	line-height: 25px;
+	color: @grey;
+	h1, h2, h3, h4 {
+		font-family: @headline-font;
+		letter-spacing: 1px;
+		color: @grey-dk;
+		margin: 40px 0 12px 0;
+	}
+	h2 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	h3 {
+		font-size: 26px;
+		font-weight: normal;
+		line-height: 36px;
+		letter-spacing: 0.5px;
+		margin-top: 20px;
+	}
+	h4 {
+		font-size: 23px;
+		letter-spacing: 0.5px;
+		color: @grey-dk;
+		margin-top: 16px;
+	}
+	p {
+		&.lead {
+			font-size: @big;
+		}
+	}
+	blockquote {
+		background-color: @brand-bg;
+		border-left: 6px solid @brand-lt;
+		margin: 30px 0 20px 0;
+		padding: 30px 30px 30px 40px;
+	}
+	cite {
+		font-style: normal;
+		color: @grey-dk;
+		.company-name {
+			font-size: @small;
+			color: @grey-lt;
+			padding: 0 4px;
+		}
+	}
+	.highlight-yellow {
+		background: @pastel-yellow;
+		display: inline-block;
+	}
+	.highlight-yellow {
+		background: @pastel-mint;
+		display: inline-block;
+	}
+}

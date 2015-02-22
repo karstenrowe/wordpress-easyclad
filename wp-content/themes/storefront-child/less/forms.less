@@ -1,0 +1,39 @@
+.site {
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="number"],
+	textarea {
+		background: #fff;
+		box-shadow: none;
+		border: 2px solid lighten(@grey-lt, 15%);
+		margin: 10px 0;
+		&:hover,
+		&:focus {
+			outline: none;
+			background: #fff;
+			border: 2px solid @grey-lt;
+		}
+		&:focus {
+			border: 2px solid @brand-lt;
+		}
+	}
+	#primary {
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			max-width: 100%;
+		}
+		input[type="submit"] {
+			width: auto;
+		}
+		input[type="radio"] {
+			margin-right: 5px;
+		}
+	}
+	label {
+		font-weight: normal;
+	}
+}

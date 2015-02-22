@@ -1,0 +1,56 @@
+body.home {
+	#content {
+		margin-top: 0;
+		// Rework Storefront grid for home page
+		.content-area {
+			width: 70%;
+			float: left;
+			margin-right: 4%;
+		}
+		// Increase width of sidebar for home page
+		#secondary.widget-area {
+			width: 26%;
+		}
+	}
+
+	article.hentry {
+		margin: 0;
+		padding: 0;
+	}
+	.entry-header { // Hide page title
+		display: none;
+	}
+	.entry-content {
+		margin-bottom: 20px;
+		h2 {
+			font-size: 40px;
+			line-height: 50px;
+			display: inline-block;
+			background-color: @brand-bg;
+			border-bottom: 4px solid @brand-lt;
+			margin: 0 0 10px 0;
+			padding: 0 4px 6px 4px;
+		}
+		h3 {
+			font-size: 30px;
+			line-height: 42px;
+			font-style: italic;
+			color: @grey-lt;
+			margin: 12px 0 20px 0;
+		}
+		h3 {
+			width: 90%;
+		}
+		p {
+			width: 65%;
+		}
+		p {
+			font-size: @big;
+			line-height: 28px;
+		}
+		em {
+			font-style: normal;
+			color: @grey-dk;
+		}
+	}
+}

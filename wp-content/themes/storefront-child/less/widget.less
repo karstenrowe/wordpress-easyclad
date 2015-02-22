@@ -1,0 +1,38 @@
+.header-widget-region {
+	margin: 0; // Override Storefront styles
+}
+
+.textwidget {
+	font-size: @normal;
+	position: relative;
+	p {
+		margin-bottom: 12px;
+	}
+	ul {
+		li {
+			margin-bottom: 10px;
+		}
+	}
+	ol {
+		margin: 12px 0 20px 30px;
+	}
+	em {
+		font-style: normal;
+		color: @grey-dk;
+		.fa {
+			width: 28px;
+		}
+	}
+}
+
+// Depot map in sidebar
+aside#text-6 {
+	.2x('img/graphic/map-easyclad-depot.png', "no-repeat", 186px, 220px);
+	background-size: 55% !important;
+	background-position: 100% 95%;
+}
+
+// MailChimp form
+.mc4wp-form label {
+	display: none;
+}

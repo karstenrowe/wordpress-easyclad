@@ -1,0 +1,107 @@
+#masthead { // Site header, includes primary navigation
+	background: rgba(255,255,255, 0.94);
+	box-shadow: 0 1px 3px rgba(0,0,0, 0.1);
+	border-bottom: 2px solid @grey-dk;
+	border-radius: 0;
+	position: fixed;
+	width: 100%;
+	padding: 24px 0 0 0;
+
+  -webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s;
+	animation: fadein 3s;
+
+  -webkit-transition: padding 0.3s;
+  -moz-transition: padding 0.3s;
+	-ms-transition: padding 0.3s;
+	-o-transition: padding 0.3s;
+  transition: padding 0.3s;
+
+	// Remove excessive Storefront theme spacing in the header
+	.site-branding,
+	.secondary-navigation,
+	.site-search {
+		margin-bottom: 0;
+		form {
+			margin-bottom: 0;
+		}
+	}
+	ul.site-header-cart {
+		// Align cart icon to nav items
+		padding-top: 22px;
+		a.cart-contents {
+			font-size: @normal;
+			padding: 8px 12px;
+			&:after { top: 24%; }
+		}
+	}
+	.site-search {
+		input[type="text"] {
+			margin: 0;
+			padding: 13px 14px 12px 40px;
+		}
+		#searchform:before {
+			top: 35%;
+			left: 16px;
+		}
+	}
+}
+.site-branding {
+	h1.site-title {
+		text-indent: -9999px;
+		a {
+			.2x('img/logo/logo-easyclad.png', "no-repeat", 217px, 33px);
+			display: block;
+			width: 217px;
+			height: 33px;
+			margin-bottom: 12px;
+
+	    -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+			-o-transition: all 0.3s;
+	    transition: all 0.3s;
+
+			&:hover {
+				opacity: 0.85;
+			}
+		}
+	}
+	p.site-description {
+		font-family: @headline-font;
+		font-size: @small;
+		line-height: 20px;
+		font-weight: bold;
+		letter-spacing: 0.5px;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		-o-transition: all 0.3s;
+    transition: all 0.3s;
+	}
+}
+
+// Decrease size of header on scroll
+#masthead.navbar-shrink {
+  padding-top: 12px;
+	.site-branding {
+		h1.site-title {
+			a {
+				background-size: 85% !important;
+				margin-bottom: 0;
+			}
+		}
+		p.site-description {
+			font-size: @small - 1px;
+		}
+  }
+  #menu-primary-navigation {
+	  padding-top: 10px;
+  }
+  .site-header-cart {
+	  padding-top: 10px;
+  }
+}
